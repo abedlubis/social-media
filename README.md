@@ -2,6 +2,36 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Route list
+- **/users** => `pages/users/index.tsx` (list of user)
+- **/posts/:userId/create** => `pages/post/PostConfig.tsx` (create page)
+- **/posts/:userId** => `pages/post/PostConfig.tsx` (list of post each user)
+- **/albums/:userId** => `pages/album/index.tsx` (list of album each user)
+- **/albums/:albumId/photo** => `pages/photo/index.tsx` (list of photo each album)
+- **/posts/:postId/edit** => `pages/post/PostConfig.tsx` (edit page)
+- **/comments/:commentId/edit** => `pages/comment/CommentConfig.tsx` (edit page)
+- **/comments/:postId/create** => `pages/comment/CommentConfig.tsx` (create page)
+
+## Project folder structure
+### `actions`
+contains API function call each page
+### `components`
+contains list of reusable components like modal, pagination, input, errorPage and so on
+### `constants`
+contain many variables that being used as a constant data
+### `environment`
+contain environment variables being exported out for firebase hosting
+### `helpers`
+contain helper class or an object or event a function ex: Validator.ts
+### `interfaces`
+contains interface structure of each page either params or responseBody API
+### `pages`
+contains list of pages component
+### `redux`
+contains action, reducer, type and rootState each page component
+### `utils`
+contains a small util function to do a low level abstractions of function and httpRequest generic function (reusable)
+
 ## Available Scripts
 
 In the project directory, you can run:

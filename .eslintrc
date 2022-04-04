@@ -1,0 +1,33 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["airbnb-typescript"],
+  "rules": {
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "max-len": [
+      1,
+      {
+        "code": 100,
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$"
+      }
+    ],
+    "no-await-in-loop": "off",
+    "no-console": ["error", { "allow": ["error"] }],
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "no-useless-return": "off",
+    "one-var-declaration-per-line": "error",
+    "radix": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "warn",
+    "react/prop-types": "off",
+    "react/sort-comp": "off"
+  }
+}
